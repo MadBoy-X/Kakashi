@@ -2,7 +2,7 @@
     <a href="https://github.com/MadBoy-X/Kakashi/stargazers"><img src="https://img.shields.io/github/repo-size/MadBoy-X/Kakashi?color=orange&logo=github&logoColor=green&style=for-the-badge" alt="Stars" /></a>
 </p>
 <p align="center">
-    <a href="https://app.codacy.com/manual/MadBoy-X/Kakashi/dashboard"> <img src="https://img.shields.io/github/repo-size/MadBoy-X/Kakashi?color=orange&logo=github&logoColor=green&style=for-the-badge" /><img src="https://img.shields.io/github/repo-size/MadBoy-X/Kakashi?color=orange&logo=github&logoColor=green&style=for-the-badge" /></a></a> alt="Codacy" /></a>
+    <a href="https://app.codacy.com/manual/MadBoy-X/Kakashi/dashboard"> <img src="https://img.shields.io/github/repo-size/MadBoy-X/Kakashi?color=orange&logo=github&logoColor=green&style=for-the-badge"
     <a href="https://github.com/MadBoy-X/Kakashi"> <img src="https://img.shields.io/github/repo-size/MadBoy-X/Kakashi?color=orange&logo=github&logoColor=green&style=for-the-badge" /></a>
     <a href="https://github.com/MadBoy-X/Kakashi/commits/prince"> <img src="https://img.shields.io/github/last-commit/MadBoy-X/Kakashi?color=blue&logo=github&logoColor=green&style=for-the-badge" /></a>
     <a href="https://github.com/MadBoy-X/Kakashi/issues"> <img src="https://img.shields.io/github/issues/MadBoy-X/Kakashi?color=blueviolet&logo=github&logoColor=green&style=for-the-badge" /></a>
