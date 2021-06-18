@@ -3,7 +3,7 @@
 </p>
 <p align="center">
     <a href="https://app.codacy.com/manual/MadBoy-X/Kakashi/dashboard">
-    <a href="https://github.com/MadBoy-X/Kakashi"> <img src="https://img.shields.io/github/repo-size/MadBoy-X/Kakashi?color=orange&logo=github&logoColor=green&style=for-the-badge" /></a>
+    <a href="https://github.com/MadBoy-X/Kakashi"> 
     <a href="https://github.com/MadBoy-X/Kakashi/commits/prince"> <img src="https://img.shields.io/github/last-commit/MadBoy-X/Kakashi?color=blue&logo=github&logoColor=green&style=for-the-badge" /></a>
     <a href="https://github.com/MadBoy-X/Kakashi/issues"> <img src="https://img.shields.io/github/issues/MadBoy-X/Kakashi?color=blueviolet&logo=github&logoColor=green&style=for-the-badge" /></a>
     <a href="https://github.com/MadBoy-X/Kakashi/network/members"> <img src="https://img.shields.io/github/forks/MadBoy-X/Kakashi?color=red&logo=github&logoColor=green&style=for-the-badge" /></a>  
