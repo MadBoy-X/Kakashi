@@ -1,7 +1,7 @@
 import speedtest
-from YoneRobot import DEV_USERS, dispatcher
-from YoneRobot.modules.disable import DisableAbleCommandHandler
-from YoneRobot.modules.helper_funcs.chat_status import dev_plus
+from Kakashi import DEV_USERS, dispatcher
+from Kakashi.modules.disable import DisableAbleCommandHandler
+from Kakashi.modules.helper_funcs.chat_status import dev_plus
 from telegram import InlineKeyboardButton, InlineKeyboardMarkup, ParseMode, Update
 from telegram.ext import CallbackContext, CallbackQueryHandler, run_async
 
