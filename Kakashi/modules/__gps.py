@@ -1,8 +1,8 @@
 import os
-from YoneRobot import telethn as tbot
+from Kakashi import telethn as tbot
 from geopy.geocoders import Nominatim
-from YoneRobot.events import register
-from YoneRobot import *
+from Kakashi.events import register
+from Kakashi import *
 from telethon import *
 from telethon.tl import *
 
