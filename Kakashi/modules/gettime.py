@@ -2,8 +2,8 @@ import datetime
 from typing import List
 
 import requests
-from YoneRobot import TIME_API_KEY, dispatcher
-from YoneRobot.modules.disable import DisableAbleCommandHandler
+from Kakashi import TIME_API_KEY, dispatcher
+from Kakashi.modules.disable import DisableAbleCommandHandler
 from telegram import ParseMode, Update
 from telegram.ext import CallbackContext, run_async
 
