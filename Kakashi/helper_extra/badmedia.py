@@ -1,4 +1,4 @@
-from YoneRobot import telethn as tbot
+from Kakashi import telethn as tbot
 import requests
 import time
 
