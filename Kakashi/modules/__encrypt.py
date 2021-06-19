@@ -1,6 +1,6 @@
-from YoneRobot import telethn as tbot
+from Kakashi import telethn as tbot
 import os
-from YoneRobot.events import register
+from Kakashi.events import register
 import secureme
 
 @register(pattern="^/encrypt ?(.*)")
