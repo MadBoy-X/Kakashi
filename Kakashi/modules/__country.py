@@ -5,8 +5,8 @@ from telethon.utils import get_input_location
 import flag
 import html, os
 from countryinfo import CountryInfo
-from YoneRobot import telethn as borg
-from YoneRobot.events import register
+from Kakashi import telethn as borg
+from Kakashi.events import register
 
 
 @register(pattern="^/country (.*)")
@@ -101,7 +101,7 @@ Time Zones:- {tom}
 Top Level Domain:- {lanester}
 wikipedia:- {wiki}</b>
 
-Gathered By Yone.</b>
+Gathered By Kakashi Hatake.</b>
 """
     
     
