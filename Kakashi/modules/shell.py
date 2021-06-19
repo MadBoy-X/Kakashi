@@ -1,7 +1,7 @@
 import subprocess
 
-from YoneRobot import LOGGER, dispatcher
-from YoneRobot.modules.helper_funcs.chat_status import dev_plus
+from Kakashi import LOGGER, dispatcher
+from Kakashi.modules.helper_funcs.chat_status import dev_plus
 from telegram import ParseMode, Update
 from telegram.ext import CallbackContext, CommandHandler
 from telegram.ext.dispatcher import run_async
