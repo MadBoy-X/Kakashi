@@ -1,7 +1,7 @@
 import threading
 
-from YoneRobot import dispatcher
-from YoneRobot.modules.sql import BASE, SESSION
+from Kakashi import dispatcher
+from Kakashi.modules.sql import BASE, SESSION
 from sqlalchemy import (
     Column,
     ForeignKey,
