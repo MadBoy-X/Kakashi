@@ -1,5 +1,7 @@
 # credits @InukaAsith, @Mr_dark_prince
 
+# Made by @Its_JassManak
+
 import logging
 import time
 
@@ -12,9 +14,9 @@ from pyrogram.errors.exceptions.bad_request_400 import (
 )
 from pyrogram.types import ChatPermissions, InlineKeyboardButton, InlineKeyboardMarkup
 
-from YoneRobot import DRAGONS as SUDO_USERS
-from YoneRobot import pbot
-from YoneRobot.modules.sql_extended import forceSubscribe_sql as sql
+from Kakashi import DRAGONS as SUDO_USERS
+from Kakashi import pbot
+from Kakashi.modules.sql_extended import forceSubscribe_sql as sql
 
 logging.basicConfig(level=logging.INFO)
 
@@ -86,7 +88,7 @@ def _check_member(client, message):
             except UserNotParticipant:
                 try:
                     sent_message = message.reply_text(
-                        "Welcome {} 🙏 \n **You havent joined our @{} Channel yet** 😭 \n \nPlease Join [Our Channel](https://t.me/{}) and hit the **UNMUTE ME** Button. \n \n ".format(
+                        "Welcome {} 😉 \n **You havent joined our @{} Channel yet** 😒 \n \nPlease Join [Our Channel](https://t.me/{}) and hit the **UNMUTE ME** Button. \n \n ".format(
                             message.from_user.mention, channel, channel
                         ),
                         disable_web_page_preview=True,
@@ -111,7 +113,7 @@ def _check_member(client, message):
                     )
                 except ChatAdminRequired:
                     sent_message.edit(
-                        "❗ **Daisy is not admin here..**\n__Give me ban permissions and retry.. \n#Ending FSub...__"
+                        "❗ **Kakashi is not admin here..**\n__Give me ban permissions and retry.. \n#Ending FSub...__"
                     )
 
             except ChatAdminRequired:
@@ -181,7 +183,7 @@ def config(client, message):
 
 __help__ = """
 *Force Subscribe:*
-❍ Yone can mute members who are not subscribed your channel until they subscribe
+❍ Kakashi Hatake can mute members who are not subscribed your channel until they subscribe
 ❍ When enabled I will mute unsubscribed members and show them a unmute button. When they pressed the button I will unmute them
 *Setup*
 *Only creator*
