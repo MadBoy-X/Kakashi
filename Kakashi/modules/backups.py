@@ -5,23 +5,23 @@ from telegram import ParseMode, Message
 from telegram.error import BadRequest
 from telegram.ext import CommandHandler, run_async
 
-import YoneRobot.modules.sql.notes_sql as sql
-from YoneRobot import dispatcher, LOGGER, OWNER_ID, JOIN_LOGGER, SUPPORT_CHAT
-from YoneRobot.__main__ import DATA_IMPORT
-from YoneRobot.modules.helper_funcs.chat_status import user_admin
-from YoneRobot.modules.helper_funcs.alternate import typing_action
+import Kakashi.modules.sql.notes_sql as sql
+from Kakashi import dispatcher, LOGGER, OWNER_ID, JOIN_LOGGER, SUPPORT_CHAT
+from Kakashi.__main__ import DATA_IMPORT
+from Kakashi.modules.helper_funcs.chat_status import user_admin
+from Kakashi.modules.helper_funcs.alternate import typing_action
 
-# from YoneRobot.modules.rules import get_rules
-import YoneRobot.modules.sql.rules_sql as rulessql
+# from Kakashi.modules.rules import get_rules
+import Kakashi.modules.sql.rules_sql as rulessql
 
-# from YoneRobot.modules.sql import warns_sql as warnssql
-import YoneRobot.modules.sql.blacklist_sql as blacklistsql
-from YoneRobot.modules.sql import disable_sql as disabledsql
+# from Kakashi.modules.sql import warns_sql as warnssql
+import Kakashi.modules.sql.blacklist_sql as blacklistsql
+from Kakashi.modules.sql import disable_sql as disabledsql
 
-# from YoneRobot.modules.sql import cust_filters_sql as filtersql
-# import YoneRobot.modules.sql.welcome_sql as welcsql
-import YoneRobot.modules.sql.locks_sql as locksql
-from YoneRobot.modules.connection import connected
+# from Kakashi.modules.sql import cust_filters_sql as filtersql
+# import Kakashi.modules.sql.welcome_sql as welcsql
+import Kakashi.modules.sql.locks_sql as locksql
+from Kakashi.modules.connection import connected
 
 
 @run_async
