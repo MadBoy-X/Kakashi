@@ -1,7 +1,7 @@
 from typing import List, Optional
 
-from YoneRobot import LOGGER
-from YoneRobot.modules.users import get_user_id
+from Kakashi import LOGGER
+from Kakashi.modules.users import get_user_id
 from telegram import Message, MessageEntity
 from telegram.error import BadRequest
 
@@ -47,7 +47,7 @@ def extract_user_and_text(
         user_id = get_user_id(user)
         if not user_id:
             message.reply_text(
-                "No idea who this user is. You'll be able to interact with them if "
+                "No idea who this user is.👀 You'll be able to interact with them if "
                 "you reply to that person's message instead, or forward one of that user's messages."
             )
             return None, None
@@ -75,7 +75,7 @@ def extract_user_and_text(
     except BadRequest as excp:
         if excp.message in ("User_id_invalid", "Chat not found"):
             message.reply_text(
-                "I don't seem to have interacted with this user before - please forward a message from "
+                "I don't seem to have interacted with this user before👀 - please forward a message from "
                 "them to give me control! (like a voodoo doll, I need a piece of them to be able "
                 "to execute certain commands...)"
             )
@@ -151,7 +151,7 @@ def extract_unt_fedban(
             user_id, int
         ):
             message.reply_text(
-                "I don't seem to have interacted with this user before "
+                "I don't seem to have interacted with this user before👀 "
                 "please forward a message from them to give me control! "
                 "(like a voodoo doll, I need a piece of them to be able to execute certain commands...)"
             )
