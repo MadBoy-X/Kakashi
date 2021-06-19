@@ -24,15 +24,15 @@ from YoneRobot import (
     dispatcher,
     sw,
 )
-from YoneRobot.__main__ import STATS, TOKEN, USER_INFO
-import YoneRobot.modules.sql.userinfo_sql as sql
-from YoneRobot.modules.disable import DisableAbleCommandHandler
-from YoneRobot.modules.sql.global_bans_sql import is_user_gbanned
-from YoneRobot.modules.sql.afk_sql import is_afk, check_afk_status
-from YoneRobot.modules.sql.users_sql import get_user_num_chats
-from YoneRobot.modules.helper_funcs.chat_status import sudo_plus
-from YoneRobot.modules.helper_funcs.extraction import extract_user
-from YoneRobot import telethn as YoneTelethonClient, TIGERS, DRAGONS, DEMONS
+from Kakashi.__main__ import STATS, TOKEN, USER_INFO
+import Kakashi.modules.sql.userinfo_sql as sql
+from Kakashi.modules.disable import DisableAbleCommandHandler
+from Kakashi.modules.sql.global_bans_sql import is_user_gbanned
+from Kakashi.modules.sql.afk_sql import is_afk, check_afk_status
+from Kakashi.modules.sql.users_sql import get_user_num_chats
+from Kakashi.modules.helper_funcs.chat_status import sudo_plus
+from Kakashi.modules.helper_funcs.extraction import extract_user
+from Kakashi import telethn as YoneTelethonClient, TIGERS, DRAGONS, DEMONS
 
 
 def no_by_per(totalhp, percentage):
