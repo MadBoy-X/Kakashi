@@ -1,8 +1,8 @@
 import importlib
 import collections
 
-from YoneRobot import dispatcher, telethn
-from YoneRobot.__main__ import (
+from Kakashi import dispatcher, telethn
+from Kakashi.__main__ import (
     CHAT_SETTINGS,
     DATA_EXPORT,
     DATA_IMPORT,
@@ -13,7 +13,7 @@ from YoneRobot.__main__ import (
     USER_INFO,
     USER_SETTINGS,
 )
-from YoneRobot.modules.helper_funcs.chat_status import dev_plus, sudo_plus
+from Kakashi.modules.helper_funcs.chat_status import dev_plus, sudo_plus
 from telegram import ParseMode, Update
 from telegram.ext import CallbackContext, CommandHandler, run_async
 
