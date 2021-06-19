@@ -22,7 +22,19 @@ Me On Telegram [✨Kakashi✨](https://t.me/HatakeRoBot)
 
 [![Deploy To Heroku](https://www.herokucdn.com/deploy/button.svg)](https://dashboard.heroku.com/new?button-url=https%3A%2F%2Fgithub.com%2FMadBoy-X%2FKakashi&template=https%3A%2F%2Fgithub.com%2FMadBoy-X%2FKakashi)
 
- 
-CREDITS
 
-YoneRoBot
+# Sᴛʀɪɴɢ Sᴇssɪᴏɴ:-
+
+## [String Session](https://replit.com/@madboy482/SuperBot)
+
+        
+## The owner won't be responsible for any kind of bans due to the bot...
+## Fᴏʀᴋ Aᴛ Yᴏᴜʀ Oᴡɴ Rɪsᴋ
+
+# Cʀᴇᴅɪᴛs 📍
+        
+## • YoneRoBot  »»  <a href="https://github.com/noob-kittu/YoneRobot" alt="YoneRoBot"> <img src="https://img.shields.io/badge/YoneRoBot-98AFC7?logo=github /></a>
+
+## • JASS MANAK  »»  <a href="https://github.com/JassManak1125" alt="Jass Manak"> <img src="https://img.shields.io/badge/Jass Manak-98AFC7?logo=github" /></a>
+        
+ 
