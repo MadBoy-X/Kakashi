@@ -5,10 +5,10 @@ import sys
 from contextlib import suppress
 from time import sleep
 
-import YoneRobot
+import Kakashi
 
-from YoneRobot import dispatcher
-from YoneRobot.modules.helper_funcs.chat_status import dev_plus
+from Kakashi import dispatcher
+from Kakashi.modules.helper_funcs.chat_status import dev_plus
 from telegram import TelegramError, Update
 from telegram.error import Unauthorized
 from telegram.ext import CallbackContext, CommandHandler, run_async
@@ -18,12 +18,12 @@ from telegram.ext import CallbackContext, CommandHandler, run_async
 def allow_groups(update: Update, context: CallbackContext):
     args = context.args
     if not args:
-        update.effective_message.reply_text(f"Current state: {YoneRobot.ALLOW_CHATS}")
+        update.effective_message.reply_text(f"Current state: {Kakashi.ALLOW_CHATS}")
         return
     if args[0].lower() in ["off", "no"]:
-        YoneRobot.ALLOW_CHATS = True
+        Kakashi.ALLOW_CHATS = True
     elif args[0].lower() in ["yes", "on"]:
-        YoneRobot.ALLOW_CHATS = False
+        Kakashi.ALLOW_CHATS = False
     else:
         update.effective_message.reply_text("Format: /lockdown Yes/No or Off/On")
         return
