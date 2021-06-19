@@ -1,4 +1,4 @@
-from YoneRobot import telethn as tbot
+from Kakashi import telethn as tbot
 import io
 import os
 import time
@@ -9,9 +9,9 @@ from telethon.tl import functions
 from telethon.tl import types
 from telethon.tl.types import *
 
-from YoneRobot import *
+from Kakashi import *
 
-from YoneRobot.events import register
+from Kakashi.events import register
 
 
 async def is_register_admin(chat, user):
