@@ -1,8 +1,8 @@
 from random import randint
 
 import requests as r
-from YoneRobot import SUPPORT_CHAT, WALL_API, dispatcher
-from YoneRobot.modules.disable import DisableAbleCommandHandler
+from Kakashi import SUPPORT_CHAT, WALL_API, dispatcher
+from Kakashi.modules.disable import DisableAbleCommandHandler
 from telegram import Update
 from telegram.ext import CallbackContext, run_async
 
