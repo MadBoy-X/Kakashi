@@ -1,20 +1,20 @@
 import html
 from typing import Optional
 
-from YoneRobot import LOGGER, TIGERS, dispatcher
-from YoneRobot.modules.helper_funcs.chat_status import (
+from Kakashi import LOGGER, TIGERS, dispatcher
+from Kakashi.modules.helper_funcs.chat_status import (
     bot_admin,
     can_restrict,
     connection_status,
     is_user_admin,
     user_admin,
 )
-from YoneRobot.modules.helper_funcs.extraction import (
+from Kakashi.modules.helper_funcs.extraction import (
     extract_user,
     extract_user_and_text,
 )
-from YoneRobot.modules.helper_funcs.string_handling import extract_time
-from YoneRobot.modules.log_channel import loggable
+from Kakashi.modules.helper_funcs.string_handling import extract_time
+from Kakashi.modules.log_channel import loggable
 from telegram import Bot, Chat, ChatPermissions, ParseMode, Update
 from telegram.error import BadRequest
 from telegram.ext import CallbackContext, CommandHandler, run_async
