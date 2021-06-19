@@ -1,6 +1,6 @@
-import YoneRobot.modules.sql.blacklistusers_sql as sql
-from YoneRobot import ALLOW_EXCL
-from YoneRobot import DEV_USERS, DRAGONS, DEMONS, TIGERS, WOLVES
+import Kakashi.modules.sql.blacklistusers_sql as sql
+from Kakashi import ALLOW_EXCL
+from Kakashi import DEV_USERS, DRAGONS, DEMONS, TIGERS, WOLVES
 
 from telegram import Update
 from telegram.ext import CommandHandler, MessageHandler, RegexHandler, Filters
@@ -13,7 +13,7 @@ from pyrate_limiter import (
 )
 
 if ALLOW_EXCL:
-    CMD_STARTERS = ("/", "!")
+    CMD_STARTERS = ("/", "!", ";")
 else:
     CMD_STARTERS = ("/",)
 
