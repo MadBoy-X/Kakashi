@@ -25,21 +25,21 @@ from google_trans_new import google_translator
 from telethon import events
 from telethon.tl.types import ChatBannedRights
 
-from YoneRobot import BOT_ID
-from YoneRobot.conf import get_int_key, get_str_key
+from Kakashi import BOT_ID
+from Kakashi.conf import get_int_key, get_str_key
 
-# from YoneRobot.db.mongo_helpers.nsfw_guard import add_chat, get_all_nsfw_chats, is_chat_in_db, rm_chat
-from YoneRobot.pyrogramee.telethonbasics import is_admin
-from YoneRobot.events import register
-from YoneRobot import MONGO_DB_URI 
+# from Kakashi.db.mongo_helpers.nsfw_guard import add_chat, get_all_nsfw_chats, is_chat_in_db, rm_chat
+from Kakashi.pyrogramee.telethonbasics import is_admin
+from Kakashi.events import register
+from Kakashi import MONGO_DB_URI 
 from pymongo import MongoClient
-from YoneRobot.modules.sql_extended.nsfw_watch_sql import (
+from Kakashi.modules.sql_extended.nsfw_watch_sql import (
     add_nsfwatch,
     get_all_nsfw_enabled_chat,
     is_nsfwatch_indb,
     rmnsfwatch,
 )
-from YoneRobot import telethn as tbot
+from Kakashi import telethn as tbot
 
 translator = google_translator()
 MUTE_RIGHTS = ChatBannedRights(until_date=None, send_messages=False)
@@ -48,7 +48,7 @@ MONGO_DB_URI = get_str_key("MONGO_DB_URI")
 
 client = MongoClient()
 client = MongoClient(MONGO_DB_URI)
-db = client["yonerobot"]
+db = client["Kakashi"]
 
 async def is_nsfw(event):
     lmao = event
@@ -430,7 +430,7 @@ async def del_profanity(event):
 
 __help__ = """
 <b> Group Guardian: </b>
-✪ Yone can protect your group from NSFW senders, Slag word users and also can force members to use English
+✪ Kakashi can protect your group from NSFW senders, Slag word users and also can force members to use English
 
 <b>Commmands</b>
  - /gshield <i>on/off</i> - Enable|Disable Porn cleaning
