@@ -2,9 +2,9 @@ import sre_constants
 
 import regex
 import telegram
-from YoneRobot import LOGGER, dispatcher
-from YoneRobot.modules.disable import DisableAbleMessageHandler
-from YoneRobot.modules.helper_funcs.regex_helper import infinite_loop_check
+from Kakashi import LOGGER, dispatcher
+from Kakashi.modules.disable import DisableAbleMessageHandler
+from Kakashi.modules.helper_funcs.regex_helper import infinite_loop_check
 from telegram import Update
 from telegram.ext import CallbackContext, Filters, run_async
 
