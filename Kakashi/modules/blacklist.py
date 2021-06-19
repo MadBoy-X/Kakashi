@@ -6,18 +6,18 @@ from telegram.error import BadRequest
 from telegram.ext import CommandHandler, MessageHandler, Filters, run_async
 from telegram.utils.helpers import mention_html
 
-import YoneRobot.modules.sql.blacklist_sql as sql
-from YoneRobot import dispatcher, LOGGER
-from YoneRobot.modules.disable import DisableAbleCommandHandler
-from YoneRobot.modules.helper_funcs.chat_status import user_admin, user_not_admin
-from YoneRobot.modules.helper_funcs.extraction import extract_text
-from YoneRobot.modules.helper_funcs.misc import split_message
-from YoneRobot.modules.log_channel import loggable
-from YoneRobot.modules.warns import warn
-from YoneRobot.modules.helper_funcs.string_handling import extract_time
-from YoneRobot.modules.connection import connected
-from YoneRobot.modules.sql.approve_sql import is_approved
-from YoneRobot.modules.helper_funcs.alternate import send_message, typing_action
+import Kakashi.modules.sql.blacklist_sql as sql
+from Kakashi import dispatcher, LOGGER
+from Kakashi.modules.disable import DisableAbleCommandHandler
+from Kakashi.modules.helper_funcs.chat_status import user_admin, user_not_admin
+from Kakashi.modules.helper_funcs.extraction import extract_text
+from Kakashi.modules.helper_funcs.misc import split_message
+from Kakashi.modules.log_channel import loggable
+from Kakashi.modules.warns import warn
+from Kakashi.modules.helper_funcs.string_handling import extract_time
+from Kakashi.modules.connection import connected
+from Kakashi.modules.sql.approve_sql import is_approved
+from Kakashi.modules.helper_funcs.alternate import send_message, typing_action
 
 BLACKLIST_GROUP = 11
 
