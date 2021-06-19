@@ -11,10 +11,10 @@ import aiohttp
 from google_trans_new import google_translator
 from pyrogram import filters
 
-from YoneRobot import BOT_ID
-from YoneRobot.helper_extra.aichat import add_chat, get_session, remove_chat
-from YoneRobot.pyrogramee.pluginshelper import admins_only, edit_or_reply
-from YoneRobot import pbot as Yone
+from Kakashi import BOT_ID
+from Kakashi.helper_extra.aichat import add_chat, get_session, remove_chat
+from Kakashi.pyrogramee.pluginshelper import admins_only, edit_or_reply
+from Kakashi import pbot as Yone
 
 translator = google_translator()
 import requests
@@ -56,23 +56,23 @@ async def hmm(_, message):
     status = message.text.split(None, 1)[1]
     chat_id = message.chat.id
     if status == "ON" or status == "on" or status == "On":
-        lel = await edit_or_reply(message, "`Processing...`")
+        lel = await edit_or_reply(message, "`Processing..!!`")
         lol = add_chat(int(message.chat.id))
         if not lol:
-            await lel.edit("yone AI Already Activated In This Chat")
+            await lel.edit("Kakashi AI Already Activated In This Chat")
             return
         await lel.edit(
-            f"yone AI Successfully Added For Users In The Chat {message.chat.id}"
+            f"Kakashi AI Successfully Added For Users In The Chat {message.chat.id}"
         )
 
     elif status == "OFF" or status == "off" or status == "Off":
         lel = await edit_or_reply(message, "`Processing...`")
         Escobar = remove_chat(int(message.chat.id))
         if not Escobar:
-            await lel.edit("yone AI Was Not Activated In This Chat")
+            await lel.edit("Kakashi AI Was Not Activated In This Chat")
             return
         await lel.edit(
-            f"yone AI Successfully Deactivated For Users In The Chat {message.chat.id}"
+            f"Kakashi AI Successfully Deactivated For Users In The Chat {message.chat.id}"
         )
 
     elif status == "EN" or status == "en" or status == "english":
@@ -114,9 +114,9 @@ async def hmm(client, message):
         message.continue_propagation()
     if chat_id in en_chats:
         test = msg
-        test = test.replace("yone", "Aco")
-        test = test.replace("yone", "Aco")
-        URL = "https://api.affiliateplus.xyz/api/chatbot?message=hi&botname=@YoneRobot&ownername=@A_viyu"
+        test = test.replace("kakashi", "Aco")
+        test = test.replace("kakashi", "Aco")
+        URL = "https://api.affiliateplus.xyz/api/chatbot?message=hi&botname=@KakashiHatake&ownername=@Its_JassManak"
 
         try:
             r = requests.request("GET", url=URL)
@@ -130,7 +130,7 @@ async def hmm(client, message):
 
         pro = result["message"]
         try:
-            await Yone.send_chat_action(message.chat.id, "typing")
+            await Kakashi.send_chat_action(message.chat.id, "typing")
             await message.reply_text(pro)
         except CFError:
             return
@@ -177,9 +177,9 @@ async def hmm(client, message):
         # test = emoji.demojize(test.strip())
 
         # Kang with the credits bitches @InukaASiTH
-        test = test.replace("yone", "Aco")
-        test = test.replace("yone", "Aco")
-        URL = f"https://api.affiliateplus.xyz/api/chatbot?message={test}&botname=@YoneRobot&ownername=@A_viyu"
+        test = test.replace("kakashi", "Aco")
+        test = test.replace("kakashi", "Aco")
+        URL = f"https://api.affiliateplus.xyz/api/chatbot?message={test}&botname=@KakashiHatake&ownername=@Its_JassManak"
         try:
             r = requests.request("GET", url=URL)
         except:
@@ -196,7 +196,7 @@ async def hmm(client, message):
             except:
                 return
         try:
-            await Yone.send_chat_action(message.chat.id, "typing")
+            await Kakashi.send_chat_action(message.chat.id, "typing")
             await message.reply_text(pro)
         except CFError:
             return
@@ -251,9 +251,9 @@ async def inuka(client, message):
     # test = emoji.demojize(test.strip())
 
     # Kang with the credits bitches @InukaASiTH
-    test = test.replace("yone", "Aco")
-    test = test.replace("yone", "Aco")
-    URL = f"https://api.affiliateplus.xyz/api/chatbot?message={test}&botname=@YoneRobot&ownername=@A_viyu"
+    test = test.replace("kakashi", "Aco")
+    test = test.replace("kakashi", "Aco")
+    URL = f"https://api.affiliateplus.xyz/api/chatbot?message={test}&botname=@KakashiHatake&ownername=@Its_JassManak"
     try:
         r = requests.request("GET", url=URL)
     except:
@@ -268,14 +268,14 @@ async def inuka(client, message):
     if not "en" in lan and not lan == "":
         pro = translator.translate(pro, lang_tgt=lan[0])
     try:
-        await Yone.send_chat_action(message.chat.id, "typing")
+        await Kakashi.send_chat_action(message.chat.id, "typing")
         await message.reply_text(pro)
     except CFError:
         return
 
 
 @Yone.on_message(
-    filters.regex("yone|yone|Yone|Yone|Yone")
+    filters.regex("Kakashi|Kakashi|Kakashi|Kakashi|Kakashi")
     & ~filters.bot
     & ~filters.via_bot
     & ~filters.forwarded
@@ -329,9 +329,9 @@ async def inuka(client, message):
     # test = emoji.demojize(test.strip())
 
     # Kang with the credits bitches @InukaASiTH
-    test = test.replace("yone", "Aco")
-    test = test.replace("yone", "Aco")
-    URL = f"https://api.affiliateplus.xyz/api/chatbot?message={test}&botname=@YoneRobot&ownername=@A_viyu"
+    test = test.replace("kakashi", "Aco")
+    test = test.replace("kakashi", "Aco")
+    URL = f"https://api.affiliateplus.xyz/api/chatbot?message={test}&botname=@KakashiHatake&ownername=@Its_JassManak"
     try:
         r = requests.request("GET", url=URL)
     except:
@@ -348,7 +348,7 @@ async def inuka(client, message):
         except Exception:
             return
     try:
-        await Yone.send_chat_action(message.chat.id, "typing")
+        await Kakashi.send_chat_action(message.chat.id, "typing")
         await message.reply_text(pro)
     except CFError:
         return
@@ -356,7 +356,7 @@ async def inuka(client, message):
 
 __help__ = """
 <b> Chatbot </b>
-Yone AI 3.0 IS THE ONLY AI SYSTEM WHICH CAN DETECT & REPLY UPTO 200 LANGUAGES
+Kakashi AI IS THE ONLY AI SYSTEM WHICH CAN DETECT & REPLY UPTO 200 LANGUAGES
  - /chatbot [ON/OFF]: Enables and disables AI Chat mode (EXCLUSIVE)
  - /chatbot EN : Enables English only chatbot
  
