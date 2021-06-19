@@ -1,15 +1,15 @@
-from YoneRobot import telethn as tbot
-from YoneRobot.events import register
+from Kakashi import telethn as tbot
+from Kakashi.events import register
 import os
 import asyncio
 import os
 import time
 from datetime import datetime
-from YoneRobot import OWNER_ID, DEV_USERS
-from YoneRobot import TEMP_DOWNLOAD_DIRECTORY as path
-from YoneRobot import TEMP_DOWNLOAD_DIRECTORY
+from Kakashi import OWNER_ID, DEV_USERS
+from Kakashi import TEMP_DOWNLOAD_DIRECTORY as path
+from Kakashi import TEMP_DOWNLOAD_DIRECTORY
 from datetime import datetime
-water = './YoneRobot/resources/yone.jpg'
+water = './Kakashi/resources/kakashi.jpg'
 client = tbot
 
 @register(pattern=r"^/send ?(.*)")
@@ -21,7 +21,7 @@ async def Prof(event):
     thumb = water
     message_id = event.message.id
     input_str = event.pattern_match.group(1)
-    the_plugin_file = "./YoneRobot/modules/{}.py".format(input_str)
+    the_plugin_file = "./Kakashi/modules/{}.py".format(input_str)
     if os.path.exists(the_plugin_file):
      message_id = event.message.id
      await event.client.send_file(
@@ -36,7 +36,7 @@ async def Prof(event):
         await event.reply("No File Found!")
 
 
-from YoneRobot.events import load_module
+from Kakashi.events import load_module
 import asyncio
 import os
 from datetime import datetime
@@ -55,7 +55,7 @@ async def install(event):
             downloaded_file_name = (
                 await event.client.download_media(  # pylint:disable=E0602
                     await event.get_reply_message(),
-                    "YoneRobot/modules/",  # pylint:disable=E0602
+                    "Kakashi/modules/",  # pylint:disable=E0602
                 )
             )
             if "(" not in downloaded_file_name:
@@ -68,7 +68,7 @@ async def install(event):
                 )
             else:
                 os.remove(downloaded_file_name)
-                k = await event.reply("**Error!**\n⚠️Cannot Install! \n📂 File not supported \n Or Pre Installed Maybe..😁",
+                k = await event.reply("**Error!**\n⚠️Cannot Install! \n📂 File not supported \n Or Maybe Pre Installed..😁",
                 )
                 await asyncio.sleep(2)
                 await k.delete()
