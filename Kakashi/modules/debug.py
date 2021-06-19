@@ -5,8 +5,8 @@ from telethon import events
 from telegram import Update
 from telegram.ext import CallbackContext, CommandHandler, run_async
 
-from YoneRobot import telethn, dispatcher
-from YoneRobot.modules.helper_funcs.chat_status import dev_plus
+from Kakashi import telethn, dispatcher
+from Kakashi.modules.helper_funcs.chat_status import dev_plus
 
 DEBUG_MODE = False
 
