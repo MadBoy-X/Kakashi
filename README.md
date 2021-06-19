@@ -33,7 +33,8 @@ Me On Telegram [✨Kakashi✨](https://t.me/HatakeRoBot)
 
 # Cʀᴇᴅɪᴛs 📍
         
-## • YoneRoBot  »»   <a href="https://github.com/noob-kittu/YoneRobot" alt="YoneRobot">
+## • YoneRoBot  »»   <a href="https://github.com/noob-kittu/YoneRobot" alt="YoneRobot"> <img src="https://img.shields.io/badge/ Yone Robot -98AFC7?logo=github" /></a>
+        
 
 ## • JASS MANAK  »»  <a href="https://github.com/JassManak1125" alt="Jass Manak"> <img src="https://img.shields.io/badge/Jass Manak-98AFC7?logo=github" /></a>
         
