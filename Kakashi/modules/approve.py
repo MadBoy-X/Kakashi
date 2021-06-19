@@ -1,11 +1,11 @@
 import html
-from YoneRobot.modules.disable import DisableAbleCommandHandler
-from YoneRobot import dispatcher, DRAGONS
-from YoneRobot.modules.helper_funcs.extraction import extract_user
+from Kakashi.modules.disable import DisableAbleCommandHandler
+from Kakashi import dispatcher, DRAGONS
+from Kakashi.modules.helper_funcs.extraction import extract_user
 from telegram.ext import CallbackContext, CallbackQueryHandler, Filters, run_async
-import YoneRobot.modules.sql.approve_sql as sql
-from YoneRobot.modules.helper_funcs.chat_status import user_admin
-from YoneRobot.modules.log_channel import loggable
+import Kakashi.modules.sql.approve_sql as sql
+from Kakashi.modules.helper_funcs.chat_status import user_admin
+from Kakashi.modules.log_channel import loggable
 from telegram import ParseMode, InlineKeyboardMarkup, InlineKeyboardButton, Update
 from telegram.utils.helpers import mention_html
 from telegram.error import BadRequest
