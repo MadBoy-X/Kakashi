@@ -65,11 +65,11 @@ RUN apt update && apt upgrade -y && \
 RUN pip3 install --upgrade pip setuptools
 
 # Copy Python Requirements to /root/YoneRobot
-RUN git clone -b shiken https://github.com/noob-kittu/YoneRobot /root/YoneRobot
-WORKDIR /root/YoneRobot
+RUN git clone -b shiken https://github.com/MadBoy-X/Kakashi /root/Kakashi
+WORKDIR /root/Kakashi
 
-#Copy config file to /root/YoneRobot/YoneRobot
-COPY ./YoneRobot/sample_config.py ./YoneRobot/config.py* /root/YoneRobot/YoneRobot/
+#Copy config file to /root/Kakashi/Kakashi
+COPY ./Kakashi/sample_config.py ./Kakashi/config.py* /root/Kakashi/Kakashi/
 
 ENV PATH="/home/bot/bin:$PATH"
 
@@ -77,4 +77,4 @@ ENV PATH="/home/bot/bin:$PATH"
 RUN pip3 install -U -r requirements.txt
 
 # Starting Worker
-CMD ["python3","-m","YoneRobot"]
+CMD ["python3","-m","Kakashi"]
