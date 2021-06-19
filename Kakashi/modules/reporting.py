@@ -1,9 +1,9 @@
 import html
 
-from YoneRobot import LOGGER, DRAGONS, TIGERS, WOLVES, dispatcher
-from YoneRobot.modules.helper_funcs.chat_status import user_admin, user_not_admin
-from YoneRobot.modules.log_channel import loggable
-from YoneRobot.modules.sql import reporting_sql as sql
+from Kakashi import LOGGER, DRAGONS, TIGERS, WOLVES, dispatcher
+from Kakashi.modules.helper_funcs.chat_status import user_admin, user_not_admin
+from Kakashi.modules.log_channel import loggable
+from Kakashi.modules.sql import reporting_sql as sql
 from telegram import Chat, InlineKeyboardButton, InlineKeyboardMarkup, ParseMode, Update
 from telegram.error import BadRequest, Unauthorized
 from telegram.ext import (
