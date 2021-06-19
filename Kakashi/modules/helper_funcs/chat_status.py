@@ -2,7 +2,7 @@ from time import perf_counter
 from functools import wraps
 from cachetools import TTLCache
 from threading import RLock
-from YoneRobot import (
+from Kakashi import (
     DEL_CMDS,
     DEV_USERS,
     DRAGONS,
@@ -139,7 +139,7 @@ def sudo_plus(func):
                 pass
         else:
             update.effective_message.reply_text(
-                "Who dis non-admin telling me what to do? You want a punch?"
+                "Who dis non-admin telling me what to do? You want a punch?😒"
             )
 
     return is_sudo_plus_func
@@ -200,7 +200,7 @@ def user_admin(func):
                 pass
         else:
             update.effective_message.reply_text(
-                "Who dis non-admin telling me what to do? You want a punch?"
+                "Who dis non-admin telling me what to do? You want a punch?😒"
             )
 
     return is_admin
@@ -252,9 +252,9 @@ def bot_admin(func):
         message_chat_title = update.effective_message.chat.title
 
         if update_chat_title == message_chat_title:
-            not_admin = "I'm not admin! - REEEEEE"
+            not_admin = "I'm not admin!😒"
         else:
-            not_admin = f"I'm not admin in <b>{update_chat_title}</b>! - REEEEEE"
+            not_admin = f"Oopss..I'm not admin in <b>{update_chat_title}</b>!"
 
         if is_bot_admin(chat, bot.id):
             return func(update, context, *args, **kwargs)
@@ -402,6 +402,6 @@ def connection_status(func):
 
 
 # Workaround for circular import with connection.py
-from YoneRobot.modules import connection
+from Kakashi.modules import connection
 
 connected = connection.connected
