@@ -23,4 +23,4 @@ db = client["Kakashi"]
 try:
     asyncio.get_event_loop().run_until_complete(motor.server_info())
 except ServerSelectionTimeoutError:
-    sys.exit(LOGGER.critical("Can't connect to mongodb! Exiting..."))
+    sys.exit(LOGGER.critical("Trying to reconnect.."))
