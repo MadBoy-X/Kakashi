@@ -13,20 +13,20 @@ async def lego(event):
  else:
      
     if not quew:
-       await event.reply('Provide Some Text To Draw!')
+       await event.reply('Provide Some Text To Draw! It should be like /logo (Your Text)')
        return
     else:
        pass
- await event.reply('Creating your logo...wait!')
+ await event.reply('Creating a logo for you...wait!')
  try:
     text = event.pattern_match.group(1)
-    img = Image.open('./Kakashi/resources/logo2.jpg')
+    img = Image.open('./Kakashi/resources/blackbg.jpg')
     draw = ImageDraw.Draw(img)
     image_widthz, image_heightz = img.size
     pointsize = 500
     fillcolor = "gold"
     shadowcolor = "blue"
-    font = ImageFont.truetype("./Kakashi/resources/Vampire Wars.otf", 330)
+    font = ImageFont.truetype("./Kakashi/resources/Chopsic.otf", 330)
     w, h = draw.textsize(text, font=font)
     h += int(h*0.21)
     image_width, image_height = img.size
@@ -34,9 +34,9 @@ async def lego(event):
     x = (image_widthz-w)/2
     y= ((image_heightz-h)/2+6)
     draw.text((x, y), text, font=font, fill="black", stroke_width=25, stroke_fill="yellow")
-    fname2 = "LogoBykakashi.png"
+    fname2 = "LogoByKakashi.png"
     img.save(fname2, "png")
-    await tbot.send_file(event.chat_id, fname2, caption="Made By Kakashi Hatake")
+    await tbot.send_file(event.chat_id, fname2, caption="Made By @HatakeRoBot")
     if os.path.exists(fname2):
             os.remove(fname2)
  except Exception as e:
@@ -53,20 +53,20 @@ async def lego(event):
  else:
      
     if not quew:
-       await event.reply('Provide Some Text To Draw!')
+       await event.reply('Provide Some Text To Make a logo!')
        return
     else:
        pass
- await event.reply('Creating your logo...wait!')
+ await event.reply('Creating your logo..wait!')
  try:
     text = event.pattern_match.group(1)
-    img = Image.open('./Kakashi/resources/superbot4.jpg')
+    img = Image.open('./Kakashi/resources/blackbg.jpg')
     draw = ImageDraw.Draw(img)
     image_widthz, image_heightz = img.size
     pointsize = 500
     fillcolor = "white"
     shadowcolor = "blue"
-    font = ImageFont.truetype("./Kakashi/resources/neon-machine.ttf", 1000)
+    font = ImageFont.truetype("./Kakashi/resources/Maghrib.ttf", 1000)
     w, h = draw.textsize(text, font=font)
     h += int(h*0.21)
     image_width, image_height = img.size
@@ -74,9 +74,9 @@ async def lego(event):
     x = (image_widthz-w)/2
     y= ((image_heightz-h)/2+6)
     draw.text((x, y), text, font=font, fill="white", stroke_width=0, stroke_fill="white")
-    fname2 = "LogoBykakashi.png"
+    fname2 = "LogoByKakashi.png"
     img.save(fname2, "png")
-    await tbot.send_file(event.chat_id, fname2, caption="Made By Kakashi Hatake")
+    await tbot.send_file(event.chat_id, fname2, caption="Made By @HatakeRoBot")
     if os.path.exists(fname2):
             os.remove(fname2)
  except Exception as e:
@@ -88,7 +88,6 @@ file_helpo = file_help.replace("_", " ")
 
 
 __help__ = """
- ❍ /logo text :  Create your logo with your name
-
+ ❍ /logo text :  Create a logo for you.
  """
 __mod_name__ = "Logo"
