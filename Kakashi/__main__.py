@@ -74,14 +74,14 @@ def get_readable_time(seconds: int) -> str:
 
 
 PM_START_TEXT = """
-ʜᴇʟʟᴏ [🤗](https://telegra.ph/file/95a8d8b221d77f3af97af.jpg), ɪ'ᴍ ᴋᴀᴋᴀsʜɪ ʜᴀᴛᴀᴋᴇ ᴀ ʜɪɢʜʟʏ ᴀᴅᴠᴀɴᴄᴇᴅ ʙᴏᴛ ᴡɪᴛʜ ʟᴏᴛs ᴏғ ᴀᴍᴀᴢɪɴɢ ᴛᴏᴏʟs.
-`ɪ'ᴍ ʜᴇʀᴇ ᴛᴏ ʜᴇʟᴘ ʏᴏᴜ ᴍᴀɴᴀɢᴇ ʏᴏᴜʀ ɢʀᴏᴜᴘꜱ! ʜɪᴛ` /help ᴛᴏ ᴋɴᴏᴡ ᴍʏ ғᴇᴀᴛᴜʀᴇs.😉  
+ ʜᴇʏ, (https://telegra.ph/file/95a8d8b221d77f3af97af.jpg), ɪ'ᴍ ᴋᴀᴋᴀꜱʜɪ ʜᴀᴛᴀᴋᴇ. ᴀ ʜɪɢʜʟʏ ᴀᴅᴠᴀɴᴄᴇᴅ ɢʀᴏᴜᴘ ᴍᴀɴᴀɢᴇᴍᴇɴᴛ ʙᴏᴛ ᴡɪᴛʜ ʟᴏᴛꜱ ᴏꜰ ꜰᴇᴀᴛᴜʀᴇꜱ.
+`ɪ'ᴍ ʜᴇʀᴇ ᴛᴏ ᴍᴀɴᴀɢᴇ ʏᴏᴜʀ ɢʀᴏᴜᴘꜱ! ᴊᴜꜱᴛ ᴀᴅᴅ ᴍᴇ ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴘ, ᴘʀᴏᴍᴏᴛᴇ ᴍᴇ. ᴛʜᴇɴ ʏᴏᴜ ᴍᴜꜱᴛ ᴄʜɪʟʟ ᴀɴᴅ ᴇɴᴊᴏʏ ᴜꜱɪɴɢ ᴍᴇ.!! 😉
 """
 
 buttons = [
     [
         InlineKeyboardButton(
-            text="➕️ ᴀᴅᴅ ᴋᴀᴋᴀsʜɪ ʜᴀᴛᴀᴋᴇ ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴘ ➕️", url="t.me/HatakeRoBot?startgroup=true"),
+            text=" ➕ ᴀᴅᴅ ᴍᴇ ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴘ ", url="t.me/HatakeRoBot?startgroup=true"),
     ],
     [
         InlineKeyboardButton(text="ᴀʙᴏᴜᴛ", callback_data="kakashi_"),
@@ -90,7 +90,7 @@ buttons = [
         ),
     ],
     [
-        InlineKeyboardButton(text="ʜᴇʟᴘ & ᴄᴏᴍᴍᴀɴᴅꜱ❔", callback_data="help_back"),
+        InlineKeyboardButton(text="❓ʜᴇʟᴘ & ᴄᴏᴍᴍᴀɴᴅꜱ❓", callback_data="help_back"),
     ],
 ]
 
@@ -102,9 +102,9 @@ HELP_STRINGS = """
 kakashi_IMG = "https://telegra.ph/file/8d6ca8f8e904519e57002.jpg"
 
 DONATE_STRING = """Heya, glad to hear you want to donate!
- Actually my owner didn't want money..He just needs love and support. My Peerroo Owner @Its_JassManak \
+ Actually my owner didn't want money..He just needs your love and support. My Peerroo Owner @Its_JassManak \
  Supporting isnt always financial!! \
- You can support us by promoting our bot ."""
+ You can support us by promoting this bot ."""
 
 IMPORTED = {}
 MIGRATEABLE = []
